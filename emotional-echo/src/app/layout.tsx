@@ -27,7 +27,53 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="min-h-screen flex flex-col w-[100%] bg-[#ffffff] text-[#000000]">
+          <div className="flex flex-col m-10 gap-10 border-1 rounded-md border-[#ffffff] shadow-md">
+            <div className="flex justify-between gap-10 bg-[#ffffff] p-5 border-[#8C8C8C] border-1 items-center align-middle">
+              <div className="flex flex-row gap-2 items-center">
+                <img />
+                <h2>Emotional Echo</h2>
+              </div>
+
+              <div>
+                <ul className="flex flex-row gap-10 list-none">
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Share Your Issue</li>
+                  <li>Dashboard</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+
+              <div className="flex flex-row gap-10 border-[#000000] border-1 p-2 justify-center">
+                <img />
+                <p>Login / Register</p>
+              </div>
+            </div>
+
+            {children}
+
+            <div className="flex flex-col gap-5 bg-[#a3b5da] text-center">
+              <div className="flex flex-row justify-between px-30 pt-3">
+                <div className="flex flex-row gap-3 items-center justify-center">
+                  <p>Resources</p>
+                  <p>Legal</p>
+                  <p>Contact Us</p>
+                </div>
+
+                <div className="flex flex-row gap-3 items-center justify-center">
+                  <div>Facebook</div>
+                  <div>Twitter</div>
+                  <div>LinkedIn</div>
+                </div>
+              </div>
+
+              <div className="border-t-1 border-[#ffffff] py-3">
+                <p>© 2025 Emotional Echo. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );
