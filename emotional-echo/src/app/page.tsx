@@ -1,13 +1,13 @@
 export default function Home() {
   return (
     <div>
-      <div className="flex flex-col gap-5 justify-center items-center text-center bg-[#F2F5FC] py-30 px-10 rounded-lg mx-10 mb-10">
+      <div className="flex flex-col gap-5 justify-center items-center text-center bg-[#c5cde1] py-30 px-10 rounded-lg mx-10 mb-10">
         <h1 className="text-6xl font-bold">Welcome to Emotional Echo</h1>
         <p className="text-xl">
           Find a safe space to express your feelings and receive <br />
           personalized support for your mental well-being.
         </p>
-        <div className="bg-[#b8cbeb] px-7 py-1 rounded-2xl text-[#ffffff] font-bold">
+        <div className="bg-[#5978ad] px-7 py-1 rounded-2xl text-[#ffffff] font-bold">
           Share Your Issue
         </div>
       </div>
